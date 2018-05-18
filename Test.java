@@ -13,9 +13,9 @@ public class Test {
 
     public static void main(String[] args) {
         String p = buildString(1000000, "41uiweh12frqwjrfwoie"); // Tamanho 20*1.000.000 = 20 M chars
-        String t = buildString(200000000, "b"); // Tamanho 200.000.000*1 = 200 M chars
+        String t = buildString(20000000, "b"); // Tamanho 20.000.000*1 = 20 M chars
         char[] pattern = p.toCharArray();
-        char[] text = p.toCharArray();
+        char[] text = t.toCharArray();
         long a = System.nanoTime();
         StringSearchAlgorithms.RabinKarpMethod(pattern, text);
         a = System.nanoTime() - a;
